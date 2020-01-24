@@ -13,8 +13,7 @@ public class Time {
 	
 	public String getFutureTime(long seconds) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
-		currentTime.plusSeconds(seconds);
-		return formatter.format(currentTime);	
+		return formatter.format(currentTime.plusSeconds(seconds));	
 	}
 
 }
