@@ -11,7 +11,7 @@ public class Time {
 		this.currentTime = currentTime;
 	}
 	
-	public static String getFutureTime(long seconds) {
+	public String getFutureTime(long seconds) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 		currentTime.plusSeconds(seconds);
 		return formatter.format(currentTime);	
