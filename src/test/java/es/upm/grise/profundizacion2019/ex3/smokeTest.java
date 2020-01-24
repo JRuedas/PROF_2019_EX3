@@ -12,7 +12,7 @@ import org.mockito.*;
 
 public class smokeTest {
 	
-	private final static String EXPECTED_DATE = "2020/01/01 00:00:00";
+	private final static String EXPECTED_DATE = "2020/01/01 00:02:00";
 	private final static long SECONDS_TO_ADD = 120L;
 	private final static LocalDateTime CURRENT_DATE = LocalDateTime.of(2020, 1, 1, 0, 0, 0, 0);
 	private final static int NUMBER_OF_INTERACTIONS = 1;
