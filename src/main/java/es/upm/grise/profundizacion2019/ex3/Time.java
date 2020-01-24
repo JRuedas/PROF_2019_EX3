@@ -5,11 +5,16 @@ import java.time.format.DateTimeFormatter;
 
 public class Time {
 	
+	private LocalDateTime currentTime;
+	
+	public Time(LocalDateTime currentTime) {
+		this.currentTime = currentTime;
+	}
+	
 	public static String getFutureTime(long seconds) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
-		LocalDateTime time = LocalDateTime.now();
-		time.plusSeconds(seconds);
-		return formatter.format(time);	
+		currentTime.plusSeconds(seconds);
+		return formatter.format(currentTime);	
 	}
 
 }
